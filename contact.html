@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kontak Kami - Satria Towing Pemalang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .fancy-font {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #e83e8c;
+            letter-spacing: 1px;
+        }
+        
+        .fancy-font span {
+            color: #007bff;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-form .form-control {
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid #e1e1e1;
+            padding-left: 15px;
+        }
+        
+        .contact-form textarea.form-control {
+            height: auto;
+            padding-top: 15px;
+        }
+        
+        .contact-form .btn-primary {
+            background-color: #3b71fe;
+            border-color: #3b71fe;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+        
+        .contact-form .btn-primary:hover {
+            background-color: #2a5bd7;
+            border-color: #2a5bd7;
+        }
+        
+        .contact-info-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        
+        .contact-info-box .icon {
+            width: 60px;
+            height: 60px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: #3b71fe;
+            font-size: 24px;
+        }
+        
+        /* Floating Emergency Button Styles */
+        .floating-emergency {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            transition: all 0.3s ease;
+        }
+        
+        .emergency-call-btn {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .emergency-call-btn:hover {
+            background: linear-gradient(135deg, #c0392b, #e74c3c);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
+        }
+        
+        .emergency-icon {
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: #e74c3c;
+            font-size: 18px;
+        }
+        
+        .emergency-text {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.3;
+            text-align: center;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 991.98px) {
+            .contact-info-box {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .floating-emergency {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .emergency-call-btn {
+                padding: 12px;
+            }
+            
+            .emergency-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+            
+            .emergency-text {
+                font-size: 12px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Floating Emergency Call Button -->
+    <div class="floating-emergency">
+        <a href="tel:+6285727174825" class="emergency-call-btn">
+          <div class="emergency-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <span class="emergency-text">DARURAT<br>24 JAM</span>
+        </a>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="bg-top navbar-light d-flex flex-column-reverse">
+    	<div class="container py-3">
+    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
+				<div class="col-md-4 d-flex align-items-center py-4">
+					<a class="navbar-brand d-flex align-items-center" href="index.html">
+						<img src="images/Logo Satria Towing.jpg" alt="Logo Towing Satria Pemalang" style="height: 50px; margin-right: 10px;">
+						<span>Towing <strong>Satria Pemalang</strong></span>
+					</a>
+				</div>								
+	    		<div class="col-lg-8 d-block">
+		    		<div class="row d-flex">
+					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+					    	<div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-paper-plane"></span></div>
+					    	<div class="text">
+					    		<span>Email</span>
+						    	<span>satriatowing@email.com</span>
+						    </div>
+					    </div>
+					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+					    	<div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-call"></span></div>
+						    <div class="text">
+						    	<span>Whatsapp</span>
+						    	<span>+62857 2717 4825</span>
+						    </div>
+					    </div>
+						<div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="ion-ios-time"></span>
+							</div>
+							<div class="text">
+								<span>Jam Operasional</span>
+								<span>Buka 24 Jam</span> <!-- Bahasa Indonesia -->
+							</div>
+						</div>						
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<!-- Brand/logo -->
+			<a class="navbar-brand fancy-font d-lg-none" href="index.html">Towing <span>Satria Pemalang</span></a>
+			
+			<!-- Toggler/collapsible Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">Tentang</a></li>
+					<li class="nav-item"><a href="services.html" class="nav-link">Layanan</a></li>
+					<li class="nav-item active"><a href="contact.html" class="nav-link">Hubungi</a></li>
+				</ul>
+				
+				<!-- Contact info for desktop -->
+				<div class="d-none d-lg-flex ml-auto">
+					<div class="d-flex align-items-center mr-3">
+						<div class="icon mr-2"><span class="ion-ios-call"></span></div>
+						<div class="text-white">
+							<small>Whatsapp</small>
+							<div>+62857 2717 4825</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Beranda <i class="ion-ios-arrow-forward"></i></a></span> <span>Hubungi Kami <i class="ion-ios-arrow-forward"></i></span></p>
+                    <h1 class="mb-0 bread">Hubungi Satria Towing Pemalang</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    <span class="subheading">Kontak Kami</span>
+                    <h2 class="mb-4">Hubungi Tim Kami</h2>
+                    <p>Silakan hubungi kami melalui formulir di bawah ini atau langsung melalui kontak yang tersedia. Kami siap membantu 24 jam.</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex">
+                <!-- Contact Form -->
+                <div class="col-lg-8 col-md-12 mb-5">
+                    <div class="contact-form">
+                        <form action="#" class="appointment-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nomor Telepon/WhatsApp">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subjek">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Pesan"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Kirim Pesan" class="btn btn-primary py-3 px-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-info-box">
+                        <div class="icon">
+                            <span class="ion-ios-pin"></span>
+                        </div>
+                        <h3>Alamat Kami</h3>
+                        <p>Jl. Raya Pemalang - Tegal KM.5, Pemalang, Jawa Tengah</p>
+                        
+                        <div class="icon mt-4">
+                            <span class="ion-ios-call"></span>
+                        </div>
+                        <h3>Nomor Telepon</h3>
+                        <p><a href="tel:+6285727174825">+62857 2717 4825</a></p>
+                        <p>Layanan 24 Jam</p>
+                        
+                        <div class="icon mt-4">
+                            <span class="ion-ios-mail"></span>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:satriatowing@email.com">satriatowing@email.com</a></p>
+                        
+                        <div class="icon mt-4">
+                            <span class="ion-ios-time"></span>
+                        </div>
+                        <h3>Jam Operasional</h3>
+                        <p>Setiap Hari, 24 Jam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-md-12">
+                    <div id="map" style="height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA Section -->
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-intro" style="background-image: url('images/bg_2.jpg');">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-0" style="color: white;">Butuh Bantuan Cepat? Hubungi Kami via WhatsApp</h2>
+                    <a href="https://wa.me/6285727174825" class="btn btn-white btn-outline-white mt-4 py-3 px-4">
+                        <i class="fab fa-whatsapp mr-2"></i> Chat Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color: hsl(220, 93%, 18%);">
+      <div class="container">
+        <div class="row mb-5">
+        <!-- Contact Information -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2" style="color: #fff;">Kontak Kami</h2>
+          <div class="block-23 mb-3">
+            <ul>
+            <li>
+              <span class="icon icon-map-marker"></span>
+              <span class="text">Jl. Raya Pemalang - Tegal KM.5, Pemalang, Jawa Tengah</span>
+            </li>
+            <li>
+              <a href="tel:+6281234567890">
+              <span class="icon icon-phone"></span>
+              <span class="text">+62 812-3456-7890 (24 Jam)</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:satriatowing.pml@gmail.com">
+              <span class="icon icon-envelope"></span>
+              <span class="text">satriatowing.pml@gmail.com</span>
+              </a>
+            </li>
+            </ul>
+          </div>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+            <li class="ftco-animate">
+            <a href="#" style="background: #3b5998;"><span class="icon-facebook"></span></a>
+            </li>
+            <li class="ftco-animate">
+            <a href="#" style="background: #25D366;"><span class="icon-whatsapp"></span></a>
+            </li>
+            <li class="ftco-animate">
+            <a href="#" style="background: #E1306C;"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      
+        <!-- Services Links -->
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5 ml-md-4">
+          <h2 class="ftco-heading-2" style="color: #fff;">Layanan Kami</h2>
+          <ul class="list-unstyled">
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Towing Darurat 24 Jam
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Derek Mobil Mogok
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Pengangkutan Kendaraan
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Jasa Towing Jarak Jauh
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Layanan Kecelakaan
+            </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      
+        <!-- Coverage Area -->
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2" style="color: #fff;">Area Layanan</h2>
+          <ul class="list-unstyled">
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Pemalang Kota
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Randudongkal
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Comal
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Petarukan
+            </a>
+            </li>
+            <li>
+            <a href="#">
+              <span class="ion-ios-arrow-round-forward mr-2"></span>Sekitar Jawa Tengah
+            </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      
+        <!-- Emergency Contact -->
+        <div class="col-md-6 col-lg-2">
+          <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2" style="color: #fff;">Darurat</h2>
+          <div class="emergency-contact" style="background: #e74c3c; padding: 15px; border-radius: 5px; text-align: center;">
+            <span class="icon-phone" style="color: white; font-size: 2rem;"></span>
+            <h3 style="color: white; font-size: 1.2rem; margin: 10px 0;">24 Jam</h3>
+            <a href="tel:+6281234567890" style="color: white; font-weight: bold; font-size: 1.1rem;">+62 812-3456-7890</a>
+          </div>
+          <div class="mt-3" style="text-align: center;">
+            <p style="color: #bbb;">Siap melayani panggilan darurat kapan saja</p>
+          </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-12 text-center">
+          <p style="color: #bbb; margin-top: 20px;">
+          &copy; <script>document.write(new Date().getFullYear());</script> Satria Towing Pemalang. 
+          Semua hak dilindungi. 
+          <br>Layanan Derek Profesional di Wilayah Pemalang dan Sekitarnya.
+          </p>
+        </div>
+        </div>
+      </div>
+      </footer>
+      
+      <style>
+      .ftco-footer a {
+        color: #bbb;
+        transition: all 0.3s ease;
+      }
+      
+      .ftco-footer a:hover {
+        color: #3b71fe;
+        text-decoration: none;
+      }
+      
+      .ftco-footer-social li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      .ftco-footer-social li a {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: white !important;
+      }
+      
+      .emergency-contact {
+        transition: all 0.3s ease;
+      }
+      
+      .emergency-contact:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+      }
+      
+      @media (max-width: 767.98px) {
+        .ftco-footer-widget {
+        margin-bottom: 30px;
+        }
+        
+        .emergency-contact {
+        margin: 0 auto;
+        max-width: 200px;
+        }
+      }
+      </style>
+    
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        function initMap() {
+            var myLatLng = {lat: -6.865952, lng: 109.366847};
+            
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: myLatLng,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#333333"
+                            },
+                            {
+                                "lightness": 40
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f2f2f2"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e9e9e9"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    }
+                ]
+            });
+            
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Satria Towing Pemalang',
+                icon: {
+                    url: 'images/marker.png',
+                    scaledSize: new google.maps.Size(50, 50)
+                }
+            });
+            
+            var infowindow = new google.maps.InfoWindow({
+                content: '<div style="padding:10px;"><strong>Satria Towing Pemalang</strong><br>Jl. Raya Pemalang - Tegal KM.5<br>Buka 24 Jam</div>'
+            });
+            
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+        
+        // Initialize map when page loads
+        $(document).ready(function() {
+            initMap();
+        });
+    </script>
+  </body>
+</html>
