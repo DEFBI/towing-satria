@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -39,7 +39,7 @@
         
         .section-title h2 {
             font-weight: 700;
-            color: #2c3e50;
+            color: #3b71fe;
         }
         
         .section-title h2:after {
@@ -60,7 +60,45 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
-        @media (max-width: 767.98px) {
+        /* NAVBAR FIXES */
+        .ftco-navbar-light {
+            background-color: #3b71fe !important;
+        }
+        
+        .navbar-toggler {
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.5rem 0.75rem;
+        }
+        
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            width: 1.2em;
+            height: 1.2em;
+        }
+        
+        @media (max-width: 991.98px) {
+            #ftco-nav {
+                background-color: #3b71fe;
+                padding: 15px;
+                margin-top: 10px;
+                border-radius: 5px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            }
+            
+            .ftco-navbar-light .navbar-nav .nav-link {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+            
+            .ftco-navbar-light .navbar-nav .nav-item:last-child .nav-link {
+                border-bottom: none;
+            }
+            
             .hero-about {
                 height: 50vh;
             }
@@ -74,80 +112,80 @@
 <body>
     <!-- Navbar -->
     <div class="bg-top navbar-light d-flex flex-column-reverse">
-    	<div class="container py-3">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
-				<div class="col-md-4 d-flex align-items-center py-4">
-					<a class="navbar-brand d-flex align-items-center" style="color: #3b5998;" href="index.html">
-						<img src="images/Logo Satria Towing.jpg" alt="Logo Towing Satria Pemalang" style="height: 50px; margin-right: 10px; color: #3b71fe;">
-						<span>Towing <strong>Satria Pemalang</strong></span>
-					</a>
-				</div>								
-	    		<div class="col-lg-8 d-block">
-		    		<div class="row d-flex">
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-paper-plane"></span></div>
-					    	<div class="text">
-					    		<span>Email</span>
-						    	<span>satriatowing@email.com</span>
-						    </div>
-					    </div>
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-call"></span></div>
-						    <div class="text">
-						    	<span>Whatsapp</span>
-						    	<span>+62857 2717 4825</span>
-						    </div>
-					    </div>
-						<div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="ion-ios-time"></span>
-							</div>
-							<div class="text">
-								<span>Jam Operasional</span>
-								<span>Buka 24 Jam</span>
-							</div>
-						</div>						
-				    </div>
-			    </div>
-		    </div>
-		  </div>
+        <div class="container py-3">
+            <div class="row no-gutters d-flex align-items-center align-items-stretch">
+                <div class="col-md-4 d-flex align-items-center py-4">
+                    <a class="navbar-brand d-flex align-items-center" style="color: #3b5998;" href="index.html">
+                        <img src="images/Logo Satria Towing.jpg" alt="Logo Towing Satria Pemalang" style="height: 50px; margin-right: 10px; color: #3b71fe;">
+                        <span>Towing <strong>Satria Pemalang</strong></span>
+                    </a>
+                </div>								
+                <div class="col-lg-8 d-block">
+                    <div class="row d-flex">
+                        <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-paper-plane"></span></div>
+                            <div class="text">
+                                <span>Email</span>
+                                <span>satriatowing@email.com</span>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-call"></span></div>
+                            <div class="text">
+                                <span>Whatsapp</span>
+                                <span>+62857 2717 4825</span>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="ion-ios-time"></span>
+                            </div>
+                            <div class="text">
+                                <span>Jam Operasional</span>
+                                <span>Buka 24 Jam</span>
+                            </div>
+                        </div>						
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<!-- Brand/logo -->
-			<a class="navbar-brand fancy-font d-lg-none" href="index.html">Towing <span>Satria Pemalang</span></a>
-			
-			<!-- Toggler/collapsible Button -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-	
-			<!-- Navbar links -->
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
-					<li class="nav-item active"><a href="about.html" class="nav-link">Tentang</a></li>
-					<li class="nav-item"><a href="services.html" class="nav-link">Layanan</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Hubungi</a></li>
-				</ul>
-				
-				<!-- Contact info for desktop -->
-				<div class="d-none d-lg-flex ml-auto">
-					<div class="d-flex align-items-center mr-3">
-						<div class="icon mr-2"><span class="ion-ios-call"></span></div>
-						<div class="text-white">
-							<small>Whatsapp</small>
-							<div>+62857 2717 4825</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <!-- Brand/logo -->
+            <a class="navbar-brand fancy-font d-lg-none" href="index.html">Towing <span>Satria Pemalang</span></a>
+            
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li class="nav-item active"><a href="about.html" class="nav-link">Tentang</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Layanan</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Hubungi</a></li>
+                </ul>
+                
+                <!-- Contact info for desktop -->
+                <div class="d-none d-lg-flex ml-auto">
+                    <div class="d-flex align-items-center mr-3">
+                        <div class="icon mr-2"><span class="ion-ios-call"></span></div>
+                        <div class="text-white">
+                            <small>Whatsapp</small>
+                            <div>+62857 2717 4825</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero-about" style="background-image: url('images/bg_2.jpg');">
-        <div class="container" >
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="display-4 font-weight-bold lead white" style="color: white;">Tentang Kami</h1>
@@ -240,194 +278,154 @@
 
     <!-- Footer -->
     <footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color: hsl(220, 93%, 18%);">
-      <div class="container">
-        <div class="row mb-5">
-        <!-- Contact Information -->
-        <div class="col-md-6 col-lg-4">
-          <div class="ftco-footer-widget mb-5">
-          <h2 class="ftco-heading-2" style="color: #fff;">Kontak Kami</h2>
-          <div class="block-23 mb-3">
-            <ul>
-            <li>
-              <span class="icon icon-map-marker"></span>
-              <span class="text">Jl. Raya Pemalang - Tegal KM.5, Pemalang, Jawa Tengah</span>
-            </li>
-            <li>
-              <a href="tel:+6281234567890">
-              <span class="icon icon-phone"></span>
-              <span class="text">+62 812-3456-7890 (24 Jam)</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:satriatowing.pml@gmail.com">
-              <span class="icon icon-envelope"></span>
-              <span class="text">satriatowing.pml@gmail.com</span>
-              </a>
-            </li>
-            </ul>
-          </div>
-          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-            <li class="ftco-animate">
-            <a href="#" style="background: #3b5998;"><span class="icon-facebook"></span></a>
-            </li>
-            <li class="ftco-animate">
-            <a href="#" style="background: #25D366;"><span class="icon-whatsapp"></span></a>
-            </li>
-            <li class="ftco-animate">
-            <a href="#" style="background: #E1306C;"><span class="icon-instagram"></span></a>
-            </li>
-          </ul>
-          </div>
+        <div class="container">
+            <div class="row mb-5">
+                <!-- Contact Information -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2" style="color: #fff;">Kontak Kami</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li>
+                                    <span class="icon icon-map-marker"></span>
+                                    <span class="text">Jl. Raya Pemalang - Tegal KM.5, Pemalang, Jawa Tengah</span>
+                                </li>
+                                <li>
+                                    <a href="tel:+6281234567890">
+                                        <span class="icon icon-phone"></span>
+                                        <span class="text">+62 812-3456-7890 (24 Jam)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:satriatowing.pml@gmail.com">
+                                        <span class="icon icon-envelope"></span>
+                                        <span class="text">satriatowing.pml@gmail.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <li class="ftco-animate">
+                                <a href="#" style="background: #3b5998;"><span class="icon-facebook"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="#" style="background: #25D366;"><span class="icon-whatsapp"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="#" style="background: #E1306C;"><span class="icon-instagram"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Services Links -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-5 ml-md-4">
+                        <h2 class="ftco-heading-2" style="color: #fff;">Layanan Kami</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Towing Darurat 24 Jam
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Derek Mobil Mogok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Pengangkutan Kendaraan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Jasa Towing Jarak Jauh
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Layanan Kecelakaan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Coverage Area -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2" style="color: #fff;">Area Layanan</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Pemalang Kota
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Randudongkal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Comal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Petarukan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ion-ios-arrow-round-forward mr-2"></span>Sekitar Jawa Tengah
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Emergency Contact -->
+                <div class="col-md-6 col-lg-2">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2" style="color: #fff;">Darurat</h2>
+                        <div class="emergency-contact" style="background: #e74c3c; padding: 15px; border-radius: 5px; text-align: center;">
+                            <span class="icon-phone" style="color: white; font-size: 2rem;"></span>
+                            <h3 style="color: white; font-size: 1.2rem; margin: 10px 0;">24 Jam</h3>
+                            <a href="tel:+6281234567890" style="color: white; font-weight: bold; font-size: 1.1rem;">+62 812-3456-7890</a>
+                        </div>
+                        <div class="mt-3" style="text-align: center;">
+                            <p style="color: #bbb;">Siap melayani panggilan darurat kapan saja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p style="color: #bbb; margin-top: 20px;">
+                        &copy; <script>document.write(new Date().getFullYear());</script> Satria Towing Pemalang. 
+                        Semua hak dilindungi. 
+                        <br>Layanan Derek Profesional di Wilayah Pemalang dan Sekitarnya.
+                    </p>
+                </div>
+            </div>
         </div>
-      
-        <!-- Services Links -->
-        <div class="col-md-6 col-lg-3">
-          <div class="ftco-footer-widget mb-5 ml-md-4">
-          <h2 class="ftco-heading-2" style="color: #fff;">Layanan Kami</h2>
-          <ul class="list-unstyled">
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Towing Darurat 24 Jam
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Derek Mobil Mogok
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Pengangkutan Kendaraan
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Jasa Towing Jarak Jauh
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Layanan Kecelakaan
-            </a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      
-        <!-- Coverage Area -->
-        <div class="col-md-6 col-lg-3">
-          <div class="ftco-footer-widget mb-5">
-          <h2 class="ftco-heading-2" style="color: #fff;">Area Layanan</h2>
-          <ul class="list-unstyled">
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Pemalang Kota
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Randudongkal
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Comal
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Petarukan
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <span class="ion-ios-arrow-round-forward mr-2"></span>Sekitar Jawa Tengah
-            </a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      
-        <!-- Emergency Contact -->
-        <div class="col-md-6 col-lg-2">
-          <div class="ftco-footer-widget mb-5">
-          <h2 class="ftco-heading-2" style="color: #fff;">Darurat</h2>
-          <div class="emergency-contact" style="background: #e74c3c; padding: 15px; border-radius: 5px; text-align: center;">
-            <span class="icon-phone" style="color: white; font-size: 2rem;"></span>
-            <h3 style="color: white; font-size: 1.2rem; margin: 10px 0;">24 Jam</h3>
-            <a href="tel:+6281234567890" style="color: white; font-weight: bold; font-size: 1.1rem;">+62 812-3456-7890</a>
-          </div>
-          <div class="mt-3" style="text-align: center;">
-            <p style="color: #bbb;">Siap melayani panggilan darurat kapan saja</p>
-          </div>
-          </div>
-        </div>
-        </div>
-        
-        <div class="row">
-        <div class="col-md-12 text-center">
-          <p style="color: #bbb; margin-top: 20px;">
-          &copy; <script>document.write(new Date().getFullYear());</script> Satria Towing Pemalang. 
-          Semua hak dilindungi. 
-          <br>Layanan Derek Profesional di Wilayah Pemalang dan Sekitarnya.
-          </p>
-        </div>
-        </div>
-      </div>
-      </footer>
-      
-      <style>
-      .ftco-footer a {
-        color: #bbb;
-        transition: all 0.3s ease;
-      }
-      
-      .ftco-footer a:hover {
-        color: #3b71fe;
-        text-decoration: none;
-      }
-      
-      .ftco-footer-social li {
-        display: inline-block;
-        margin-right: 10px;
-      }
-      
-      .ftco-footer-social li a {
-        width: 40px;
-        height: 40px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        color: white !important;
-      }
-      
-      .emergency-contact {
-        transition: all 0.3s ease;
-      }
-      
-      .emergency-contact:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
-      }
-      
-      @media (max-width: 767.98px) {
-        .ftco-footer-widget {
-        margin-bottom: 30px;
-        }
-        
-        .emergency-contact {
-        margin: 0 auto;
-        max-width: 200px;
-        }
-      }
-      </style>
-    
+    </footer>
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Close mobile menu when clicking on a link
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
 </body>
 </html>
