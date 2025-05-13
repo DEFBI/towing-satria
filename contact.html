@@ -290,31 +290,31 @@
                 <!-- Contact Form -->
                 <div class="col-lg-8 col-md-12 mb-5">
                     <div class="contact-form">
-                        <form action="#" class="appointment-form">
+                        <form id="contactForm" class="appointment-form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                                        <input type="text" id="name" class="form-control" placeholder="Nama Lengkap" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nomor Telepon/WhatsApp">
+                                        <input type="text" id="phone" class="form-control" placeholder="Nomor Telepon/WhatsApp" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subjek">
+                                        <input type="text" id="subject" class="form-control" placeholder="Subjek" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Pesan"></textarea>
+                                        <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Pesan" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="submit" value="Kirim Pesan" class="btn btn-primary py-3 px-4">
+                                        <button type="submit" class="btn btn-primary py-3 px-4">Kirim Pesan</button>
                                     </div>
                                 </div>
                             </div>
@@ -782,6 +782,35 @@
         // Initialize map when page loads
         $(document).ready(function() {
             initMap();
+            
+            // Handle form submission
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = $('#name').val();
+                const phone = $('#phone').val();
+                const subject = $('#subject').val();
+                const message = $('#message').val();
+                
+                // Create WhatsApp message
+                const whatsappMessage = `Halo Satria Towing Pemalang,\n\nSaya ${name} (${phone}).\n\nSubjek: ${subject}\n\nPesan: ${message}\n\nMohon bantuannya. Terima kasih.`;
+                
+                // Encode message for URL
+                const encodedMessage = encodeURIComponent(whatsappMessage);
+                
+                // Create WhatsApp URL
+                const whatsappUrl = `https://wa.me/6281230003674?text=${encodedMessage}`;
+                
+                // Open WhatsApp in new tab
+                window.open(whatsappUrl, '_blank');
+                
+                // Optional: Reset form after submission
+                $('#contactForm')[0].reset();
+                
+                // Optional: Show success message
+                alert('Pesan Anda akan dikirim via WhatsApp. Terima kasih!');
+            });
         });
     </script>
   </body>
