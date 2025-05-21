@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- Favicon untuk menampilkan logo di tab browser -->
+    <link rel="icon" type="image/png" href="images/Logo Satria Towing.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="images/Logo Satria Towing.jpg">
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -42,6 +46,10 @@
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            z-index: 10;
         }
         
         .contact-form .form-control {
@@ -176,6 +184,17 @@
                 font-size: 12px;
             }
         }
+
+        .contact-form .form-control,
+        .contact-form textarea.form-control {
+            color: #222 !important;
+            background: #fff !important;
+        }
+        .contact-form .form-control::placeholder,
+        .contact-form textarea.form-control::placeholder {
+            color: #888 !important;
+            opacity: 1 !important;
+        }
     </style>
   </head>
   <body>
@@ -185,7 +204,7 @@
           <div class="emergency-icon">
             <i class="fas fa-phone-alt"></i>
           </div>
-          <span class="emergency-text">DARURAT<br>24 JAM</span>
+          <span class="emergency-text">24 JAM</span>
         </a>
     </div>
     
@@ -356,15 +375,25 @@
     </section>
 
     <!-- Map Section -->
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
-        <div class="container-fluid px-0">
-            <div class="row no-gutters">
-                <div class="col-md-12">
-                    <div id="map" style="height: 500px;"></div>
-                </div>
+    <div class="col-lg-12 col-md-12 mb-4 mb-lg-0">
+        <div class="map-container" style="height: 100%; min-height: 450px; border-radius: 10px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.3s ease; border: 1px solid rgba(59, 113, 254, 0.1); position: relative;">
+            <!-- Overlay untuk hover effect -->
+            <div class="map-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(59, 113, 254, 0.05); opacity: 0; transition: all 0.3s ease; z-index: 1; pointer-events: none;"></div>
+            
+            <!-- Tambahkan judul peta -->
+            <div class="map-title" style="position: absolute; top: 15px; left: 15px; background: white; padding: 8px 16px; border-radius: 25px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); z-index: 2; font-weight: 600; color: #3b71fe; font-size: 14px;">
+                <i class="fas fa-map-marker-alt mr-2"></i> Lokasi Kami
             </div>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.234944551234!2d109.3668473147726!3d-6.865951995038767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTEnNTcuNCJTIDEwOcKwMjInMDkuNiJF!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" 
+                width="100%" 
+                height="100%" 
+                style="border:0; min-height: 450px; position: relative; z-index: 0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
         </div>
-    </section>
+    </div> 
 
     <!-- WhatsApp CTA Section -->
     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-intro" style="background-image: url('images/bg_2.jpg');">
@@ -489,21 +518,7 @@
           </div>
         </div>
       
-        <!-- Emergency Contact -->
-        <div class="col-md-6 col-lg-2">
-          <div class="ftco-footer-widget mb-5">
-          <h2 class="ftco-heading-2" style="color: #fff;">Darurat</h2>
-          <div class="emergency-contact" style="background: #e74c3c; padding: 15px; border-radius: 5px; text-align: center;">
-            <span class="icon-phone" style="color: white; font-size: 2rem;"></span>
-            <h3 style="color: white; font-size: 1.2rem; margin: 10px 0;">24 Jam</h3>
-            <a href="tel:+6281234567890" style="color: white; font-weight: bold; font-size: 1.1rem;">+62 812-3456-7890</a>
-          </div>
-          <div class="mt-3" style="text-align: center;">
-            <p style="color: #bbb;">Siap melayani panggilan darurat kapan saja</p>
-          </div>
-          </div>
-        </div>
-        </div>
+                </div>
         
         <div class="row">
         <div class="col-md-12 text-center">
@@ -561,6 +576,15 @@
         margin: 0 auto;
         max-width: 200px;
         }
+      }
+      
+      .map-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(59, 113, 254, 0.15);
+      }
+      
+      .map-container:hover .map-overlay {
+        opacity: 1;
       }
       </style>
     
@@ -794,7 +818,7 @@
                 const message = $('#message').val();
                 
                 // Create WhatsApp message
-                const whatsappMessage = `Halo Satria Towing Pemalang,\n\nSaya ${name} (${phone}).\n\nSubjek: ${subject}\n\nPesan: ${message}\n\nMohon bantuannya. Terima kasih.`;
+                const whatsappMessage = `Halo Satria Towing Pemalang,%0A%0ASaya ${name} (${phone}).%0A%0ASubjek: ${subject}%0A%0APesan: ${message}%0A%0AMohon bantuannya. Terima kasih.`;
                 
                 // Encode message for URL
                 const encodedMessage = encodeURIComponent(whatsappMessage);
@@ -812,6 +836,31 @@
                 alert('Pesan Anda akan dikirim via WhatsApp. Terima kasih!');
             });
         });
+    </script>
+    <script>
+    // Pastikan jQuery sudah termuat
+    (function() {
+      function sendToWhatsApp(e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var phone = document.getElementById('phone').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var whatsappMessage = `Halo Satria Towing Pemalang,%0A%0ASaya ${name} (${phone}).%0A%0ASubjek: ${subject}%0A%0APesan: ${message}%0A%0AMohon bantuannya. Terima kasih.`;
+        var whatsappUrl = `https://wa.me/6281230003674?text=${whatsappMessage}`;
+        window.open(whatsappUrl, '_blank');
+        document.getElementById('contactForm').reset();
+        return false;
+      }
+      if (window.jQuery) {
+        $('#contactForm').off('submit').on('submit', sendToWhatsApp);
+      } else {
+        var form = document.getElementById('contactForm');
+        if (form) {
+          form.onsubmit = sendToWhatsApp;
+        }
+      }
+    })();
     </script>
   </body>
 </html>
